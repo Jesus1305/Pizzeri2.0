@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Pizzeria Los Arcos</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_signin">Registrarse</string>
+    <string name="btn_guest">Invitado</string>
+    <string name="tv_unase">Únase</string>
+    <string name="tv_terms_and_conditions">Si pulsa Aceptar significa que acepta nuestros Términos y condiciones y ha leído la Declaración de privacidad.</string>
+    <string name="btn_acept">Aceptar</string>
+    <string name="tv_profile">Información del perfil</string>
+    <string name="et_name">Nombre(s)</string>
+    <string name="et_lastname">Apellidos</string>
+    <string name="et_email">e-mail </string>
+    <string name="btn_next">Siguiente</string>
+    <string name="tv_register_number">Registrate con tu número de celular</string>
+    <string name="btn_next_a">Siguiente</string>
+    <string name="tv_verification_code">Introduzca el código de seguridad</string>
+    <string name="tv_phone_number">Enviado a</string>
+    <string name="et_verification_code">Código de seguridad</string>
+    <string name="tv_create_password">Crea una contraseña</string>
+    <string name="et_password">Contraseña</string>
+    <string name="et_verifypassword">Verifica contraseña</string>
+    <string name="btn_register">Registrarse</string>
+
+    <string-array name="countries">
+        <item>🇲🇽 México (+52)</item>
+        <item>🇺🇸 Estados Unidos (+1)</item>
+    </string-array>
+    <string name="title_activity_menu_navigation">MenuNavigationActivity</string>
+    <string name="tv_introduce_password">Introduce tu contraseña</string>
+    <string name="tv_login_with_email">Inicia sesión con tu correo electrónico</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="tv_register_account"><u>Registrar una cuenta</u></string>
+    <string name="tv_restore_password"><u>He olvidado la contraseña</u></string>
+    <string name="title_menu">Menú</string>
+    <string name="title_more">Más</string>
+
+
+    <string-array name="pextras">
+        <item></item>
+        <item>Peperoni ($10)</item>
+        <item>Jamon ($10)</item>
+        <item>Jamon de pavo  ($10)</item>
+        <item>Salami  ($10)</item>
+        <item>Queso ($20)</item>
+        <item>Tocino ($20)</item>
+        <item>Camarones ($20)</item>
+        <item>Pimiento morron($10)</item>
+        <item>Champinones($10)</item>
+        <item>Cebolla ($10)</item>
+        <item>Tomate ($10)</item>
+        <item>Pina ($10)</item>
+        <item>Topping especial ($10)</item>
+        <item>Frijoles ($10)</item>
+        <item>Jalapenios ($10)</item>
+
+    </string-array>
+
+    <string-array name="cantidad">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="hextras">
+        <item></item>
+        <item>Pina ($8)</item>
+        <item>Jamon($5)</item>
+        <item>Tocino (2 tiras) ($15)</item>
+        <item>Carne de res ($10)</item>
+        <item>Queso ($5)</item>
+        <item>Carne de pollo ($10)</item>
+    </string-array>
+
+    <string-array name="eextras">
+        <item></item>
+        <item>Jamon($12)</item>
+        <item>Tocino ($25)</item>
+        <item>Champinones ($12)</item>
+        <item>Queso ($12)</item>
+        <item>Pechuga de pollo ($15)</item>
+        <item>Aderezo($15)</item>
+        <item>Aguacate ($8)</item>
+    </string-array>
+
+    <string-array name="mextras">
+        <item></item>
+        <item>Camarones ($25)</item>
+        <item>Pan ($5)</item>
+        <item>Aguacate ($8)</item>
+    </string-array>
+
+    <string-array name="mextras2">
+        <item></item>
+        <item>Arroz ($15)</item>
+        <item>Papas francesas ($11)</item>
+        <item>Frijoles ($10)</item>
+        <item>Verdura ($10)</item>
+        <item>Aguacate ($8)</item>
+    </string-array>
+
+    <string-array name="plextras">
+        <item></item>
+        <item>Frijoles ($10)</item>
+        <item>Arroz ($15)</item>
+        <item>Verdura ($10)</item>
+        <item>Rajas ($8)</item>
+        <item>Papas francesas ($11)</item>
+        <item>Pechuga de pollo ($15)</item>
+        <item>Tocino ($25)</item>
+    </string-array>
+
+    <string-array name="plextras2">
+        <item></item>
+        <item>Pan ($6)</item>
+        <item>Queso ($15)</item>
+        <item>Camarones ($20)</item>
+        <item>Salsa ($10)</item>
+    </string-array>
+
+    <string-array name="plextras3">
+        <item></item>
+        <item>Aguacate ($15)</item>
+        <item>Queso ($15)</item>
+        <item>Arroz ($15)</item>
+        <item>Tortillas ($0)</item>
+        <item>Pechuga de pollo ($15)</item>
+    </string-array>
+
+    <string-array name="plextras4">
+        <item></item>
+        <item>Frijoles ($10)</item>
+        <item>Arroz ($15)</item>
+        <item>Verdura ($10)</item>
+        <item>Rajas ($8)</item>
+        <item>Papas francesas ($11)</item>
+    </string-array>
+
+    <string-array name="dextras">
+        <item></item>
+        <item>Torta de papa ($8)</item>
+        <item>Frijoles ($10)</item>
+        <item>Rajas ($8)</item>
+        <item>Chuleta ahumada ($22)</item>
+        <item>Papas francesas ($11)</item>
+        <item>Huevo extra ($5)</item>
+        <item>Jamon($5)</item>
+        <item>Arroz ($15)</item>
+        <item>Fajita de res ($40)</item>
+        <item>Hotcacke ($20)</item>
+        <item>Chilaquiles rojos ($10)</item>
+        <item>Chilaquiles verdes ($10)</item>
+        <item>Tocino ($8)</item>
+    </string-array>
+
+    <string-array name="bsabor">
+        <item></item>
+        <item>Coca Cola</item>
+        <item>Sprite</item>
+        <item>Fresca</item>
+        <item>Sidral Mundet</item>
+        <item>Naranja</item>
+        <item>Coca Cola Ligth</item>
+        <item>Coca Cola sin azucar</item>
+
+    </string-array>
+
+    <string-array name="bsabor2">
+
+        <item>Claro </item>
+        <item>Oscuro</item>
+    </string-array>
+
+    <string-array name="bsabor3">
+
+        <item>Caliente </item>
+        <item>Frio</item>
+    </string-array>
+
+    <string-array name="bsabor4">
+        <item>Nuez</item>
+        <item>Platano</item>
+        <item>Mixto</item>
+    </string-array>
+
+    <string-array name="posabor">
+        <item>Vainilla</item>
+        <item>Fresa</item>
+        <item>Chocolate</item>
+        <item>Vainilla/Fresa</item>
+        <item>Chocolate/Vainilla</item>
+    </string-array>
+
+    <string-array name="msabor">
+        <item>Pina</item>
+        <item>Vainilla</item>
+        <item>Fresa</item>
+        <item>Chocolate</item>
+    </string-array>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.menu.MenuFragment">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewPizzas"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pizzas_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="Pizzasact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewHamburguesas"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitXY"
+            android:onClick="hamburgesa"
+            android:src="@drawable/hamburguesas_menu"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/imageViewPizzas"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPizzas" />
+
+        <ImageView
+            android:id="@+id/imageViewEnsaladas"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="fitXY"
+            android:onClick="ensalada"
+            android:src="@drawable/ensaladas_menu"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewPizzas"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/imageViewHamburguesas" />
+
+        <ImageView
+            android:id="@+id/imageViewPlatillos"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:onClick="platillos"
+            android:src="@drawable/platillos_menu"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewHamburguesas"
+            app:layout_constraintStart_toStartOf="@+id/imageViewHamburguesas"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewHamburguesas" />
+
+        <ImageView
+            android:id="@+id/imageViewMariscos"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mariscos_menu"
+            android:onClick="marisco"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewEnsaladas"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewEnsaladas"
+            app:layout_constraintTop_toTopOf="@+id/imageViewPlatillos" />
+
+        <ImageView
+            android:id="@+id/imageViewDesayunos"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:onClick="desayuno"
+            android:src="@drawable/desayunos_menu"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewPlatillos"
+            app:layout_constraintStart_toStartOf="@+id/imageViewPlatillos"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPlatillos" />
+
+        <ImageView
+            android:id="@+id/imageViewBebidas"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bebidas_menu"
+            android:onClick="bebidas"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewMariscos"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewMariscos"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDesayunos" />
+
+        <ImageView
+            android:id="@+id/imageViewPostres"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/postres_menu"
+            android:onClick="postres"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewDesayunos"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewDesayunos"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDesayunos" />
+
+        <ImageView
+            android:id="@+id/imageViewNieves"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            android:onClick="nieves"
+            android:src="@drawable/nieves_malteadas_menu"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBebidas"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBebidas"
+            app:layout_constraintTop_toTopOf="@+id/imageViewPostres" />
+
+        <ImageView
+            android:id="@+id/imageViewKids"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:onClick="kids"
+            android:src="@drawable/kids_menu"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewNieves"
+            app:layout_constraintStart_toStartOf="@+id/imageViewPostres"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPostres" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

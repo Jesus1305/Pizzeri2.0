@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdetallesActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tamanoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="TAMANO"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:translationY="10dp" />
+
+                <Button
+                    android:id="@+id/chicaView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_toStartOf="@+id/medianaView"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Chicas"
+                    android:text="Chica"
+                    android:translationY="60dp" />
+
+                <Button
+                    android:id="@+id/medianaView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Medianas"
+                    android:text="Mediana"
+                    android:translationY="60dp" />
+
+                <Button
+                    android:id="@+id/grandeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toEndOf="@+id/medianaView"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Grandes"
+                    android:text="Grande"
+                    android:translationY="60dp" />
+
+                <TextView
+                    android:id="@+id/cantidadView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Cantidad"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:translationY="100dp" />
+
+                <Spinner
+                    android:id="@+id/cantidadspinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:entries="@array/cantidad"
+                    android:translationY="150dp" />
+
+                <TextView
+                    android:id="@+id/ingredienteextraView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Ingrediente extra (por cantidad)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:translationY="170dp" />
+
+                <Spinner
+                    android:id="@+id/ingredienteSpiner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:entries="@array/pextras"
+                    android:translationY="200dp" />
+
+                <TextView
+                    android:id="@+id/extraView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:translationY="240dp" />
+
+                <TextView
+                    android:id="@+id/extra2View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:translationY="260dp" />
+
+                <TextView
+                    android:id="@+id/extra3View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:translationY="280dp" />
+
+                <TextView
+                    android:id="@+id/comentariosView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Comentarios (opcional)"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:translationY="300dp" />
+
+                <EditText
+                    android:id="@+id/comentariosText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffff"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:translationY="330dp" />
+
+                <TextView
+                    android:id="@+id/totalView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Total"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:translationY="420dp" />
+
+                <TextView
+                    android:id="@+id/finalView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:translationY="450dp" />
+
+                <Button
+                    android:id="@+id/agregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:onClick="menu"
+                    android:text="Agregar"
+                    android:translationY="500dp" />
+
+                <TextView
+                    android:id="@+id/extra0View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:translationY="1000dp" />
+
+                <ImageButton
+                    android:id="@+id/eliminarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ingredienteSpiner"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="eliminar"
+                    android:translationY="210dp"
+                    app:srcCompat="@android:drawable/btn_dialog" />
+
+                <TextView
+                    android:id="@+id/nombrepizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:translationY="400dp" />
+
+                <TextView
+                    android:id="@+id/subtotalView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:translationY="380dp" />
+
+                <TextView
+                    android:id="@+id/sizeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/cantidadesView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

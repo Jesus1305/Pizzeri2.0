@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KdetalleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/kcantidadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Cantidad"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="50dp" />
+
+        <Spinner
+            android:id="@+id/kcantidadspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:entries="@array/cantidad"
+            android:translationY="70dp" />
+
+
+        <TextView
+            android:id="@+id/kcomentariosView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Comentarios (opcional)"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="120dp" />
+
+        <EditText
+            android:id="@+id/kcomentariosText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffff"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:translationY="150dp" />
+
+        <TextView
+            android:id="@+id/ktotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Total"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="240dp" />
+
+        <TextView
+            android:id="@+id/kfinalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="270dp" />
+
+        <Button
+            android:id="@+id/kagregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Agregar"
+            android:onClick="kagregar"
+            android:translationY="320dp" />
+
+        <TextView
+            android:id="@+id/kextra0View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:translationY="1000dp" />
+
+        <TextView
+            android:id="@+id/kcantidadesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/knombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:translationY="400dp" />
+
+        <TextView
+            android:id="@+id/ksubtotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:translationY="380dp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

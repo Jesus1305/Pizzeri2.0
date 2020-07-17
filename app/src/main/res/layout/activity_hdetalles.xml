@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HdetallesActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/hcantidadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="20dp" />
+
+        <Spinner
+            android:id="@+id/hcantidadspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/cantidad"
+            android:translationY="70dp"/>
+
+        <TextView
+            android:id="@+id/hingredienteextraView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Ingrediente extra (por cantidad)"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="90dp" />
+
+        <Spinner
+            android:id="@+id/hingredienteSpiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:entries="@array/pextras"
+            android:translationY="120dp" />
+
+        <TextView
+            android:id="@+id/hextraView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:translationY="160dp" />
+
+        <TextView
+            android:id="@+id/hextra2View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:translationY="180dp" />
+
+        <TextView
+            android:id="@+id/hextra3View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:translationY="200dp" />
+
+        <TextView
+            android:id="@+id/hcomentariosView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Comentarios (opcional)"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="220dp" />
+
+        <EditText
+            android:id="@+id/hcomentariosText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffff"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:translationY="250dp" />
+
+        <TextView
+            android:id="@+id/htotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Total"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="340dp" />
+
+        <TextView
+            android:id="@+id/hfinalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="370dp" />
+
+        <Button
+            android:id="@+id/hagregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Agregar"
+            android:onClick="hagregar"
+            android:translationY="420dp" />
+
+        <TextView
+            android:id="@+id/hextra0View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:translationY="1000dp" />
+
+        <ImageButton
+            android:id="@+id/heliminarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/hingredienteSpiner"
+            android:background="@color/colorPrimaryDark"
+            android:translationY="130dp"
+            android:onClick="heliminar"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <TextView
+            android:id="@+id/hnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:translationY="400dp" />
+
+        <TextView
+            android:id="@+id/hsubtotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:translationY="380dp" />
+
+
+
+        <TextView
+            android:id="@+id/hcantidadesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

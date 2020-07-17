@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BdetalleActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/bingredienteextraView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabor"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="20dp" />
+
+        <Spinner
+            android:id="@+id/bingredienteSpiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/bsabor"
+            android:translationY="70dp"/>
+
+        <TextView
+            android:id="@+id/bcantidadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Cantidad"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="90dp" />
+
+        <Spinner
+            android:id="@+id/bcantidadspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:entries="@array/cantidad"
+            android:translationY="120dp" />
+
+        <TextView
+            android:id="@+id/bcomentariosView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Comentarios (opcional)"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="220dp" />
+
+        <EditText
+            android:id="@+id/bcomentariosText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffff"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:translationY="250dp" />
+
+        <TextView
+            android:id="@+id/btotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Total"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="340dp" />
+
+        <TextView
+            android:id="@+id/bfinalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="370dp" />
+
+        <Button
+            android:id="@+id/bagregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Agregar"
+            android:onClick="bagregar"
+            android:translationY="420dp" />
+
+        <TextView
+            android:id="@+id/bextra0View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:translationY="1000dp" />
+
+        <TextView
+            android:id="@+id/bnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:translationY="400dp" />
+
+        <TextView
+            android:id="@+id/bsubtotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:translationY="380dp" />
+
+        <TextView
+            android:id="@+id/bcantidadesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

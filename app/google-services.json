@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "256549387021",
+    "firebase_url": "https://pizzeria-los-arcos.firebaseio.com",
+    "project_id": "pizzeria-los-arcos",
+    "storage_bucket": "pizzeria-los-arcos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256549387021:android:7b2d7f71453ef0e5074e44",
+        "android_client_info": {
+          "package_name": "com.edgarlopez.pizzerialosarcos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256549387021-0s98b5rjukuk8eg2mhvsmcjtvtgohdlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvojudzFdEvm0b4Z0GZehfKE7ZuPcMBI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256549387021-0s98b5rjukuk8eg2mhvsmcjtvtgohdlp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "256549387021-1fohhiml6m447rvds5okf1p81ibch45q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.edgarlopez.Pizzeria-Los-Arcos-GM-Admin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256549387021:android:9878d0f50439c413074e44",
+        "android_client_info": {
+          "package_name": "com.example.los"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256549387021-00f86pa04r0t0848vc2nhhfad2v09a87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.los",
+            "certificate_hash": "6962ca4d9b32ba01c45b3e4a3d21964402e6e41d"
+          }
+        },
+        {
+          "client_id": "256549387021-0s98b5rjukuk8eg2mhvsmcjtvtgohdlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvojudzFdEvm0b4Z0GZehfKE7ZuPcMBI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256549387021-0s98b5rjukuk8eg2mhvsmcjtvtgohdlp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "256549387021-1fohhiml6m447rvds5okf1p81ibch45q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.edgarlopez.Pizzeria-Los-Arcos-GM-Admin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

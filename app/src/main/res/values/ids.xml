@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pizzanameView" type="id" />
+    <item name="pizzadetalleView" type="id" />
+</resources>
