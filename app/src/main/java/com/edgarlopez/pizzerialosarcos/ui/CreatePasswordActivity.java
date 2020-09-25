@@ -5,14 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.edgarlopez.pizzerialosarcos.R;
-import com.edgarlopez.pizzerialosarcos.common.Constantes;
+import com.edgarlopez.pizzerialosarcos.Constantes;
 import com.edgarlopez.pizzerialosarcos.common.SharedPreferencesManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;

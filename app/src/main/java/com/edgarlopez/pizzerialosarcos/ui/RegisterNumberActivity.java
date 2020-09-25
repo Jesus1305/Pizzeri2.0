@@ -1,11 +1,8 @@
 package com.edgarlopez.pizzerialosarcos.ui;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +14,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.edgarlopez.pizzerialosarcos.R;
-import com.edgarlopez.pizzerialosarcos.common.Constantes;
+import com.edgarlopez.pizzerialosarcos.Constantes;
 import com.edgarlopez.pizzerialosarcos.common.SharedPreferencesManager;
 import com.google.android.gms.tasks.TaskExecutors;
 import com.google.firebase.FirebaseException;

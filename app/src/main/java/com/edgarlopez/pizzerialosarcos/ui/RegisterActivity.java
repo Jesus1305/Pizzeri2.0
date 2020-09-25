@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.edgarlopez.pizzerialosarcos.R;
-import com.edgarlopez.pizzerialosarcos.common.Constantes;
+import com.edgarlopez.pizzerialosarcos.Constantes;
 import com.edgarlopez.pizzerialosarcos.common.SharedPreferencesManager;
 
 import java.util.regex.Matcher;
