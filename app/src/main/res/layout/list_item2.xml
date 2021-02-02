@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/inombreView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="los arcos" />
+        <TextView
+            android:id="@+id/isizeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/inombreView"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="grande" />
+
+        <TextView
+            android:id="@+id/icantidadView"
+            android:translationY="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Cantidad" />
+
+
+        <TextView
+            android:id="@+id/ircantidadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_toEndOf="@+id/icantidadView"
+            android:layout_marginLeft="15dp"
+            android:translationY="25dp"/>
+
+        <TextView
+            android:id="@+id/iextraView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes extra"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:translationY="50dp"/>
+
+        <TextView
+            android:id="@+id/irextraView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="e"
+            android:layout_toEndOf="@+id/iextraView"
+            android:layout_marginLeft="15dp"
+            android:translationY="50dp"/>
+
+        <TextView
+            android:id="@+id/icomentariosView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Comentarios"
+            android:translationY="75dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/ircomentariosView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_toEndOf="@+id/icomentariosView"
+            android:layout_marginLeft="15dp"
+            android:onClick="eliminarr"
+            android:translationY="75dp"
+            />
+
+        <TextView
+            android:id="@+id/iprecioView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:layout_toEndOf="@+id/icenter"
+            android:layout_marginLeft="50dp"
+            android:translationY="25dp"
+            android:textSize="20dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:id="@+id/ieliminar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/iprecioView"
+            android:background="@color/colorPrimary"
+            android:text=""
+            android:onClick="eliminarr"
+            android:translationY="0dp" />
+
+        <TextView
+            android:id="@+id/icenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/itotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="124"
+            android:layout_marginLeft="65dp"
+            android:textSize="20dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/icenter"
+            android:translationY="50dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
