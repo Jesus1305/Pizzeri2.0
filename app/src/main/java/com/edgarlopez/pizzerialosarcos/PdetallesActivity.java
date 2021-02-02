@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -15,7 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.edgarlopez.pizzerialosarcos.ui.MenuNavigationActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PdetallesActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText comentarios;
@@ -54,12 +52,12 @@ public class PdetallesActivity extends AppCompatActivity implements AdapterView.
         mediana = (Button) findViewById(R.id.medianaView);
         grande = (Button) findViewById(R.id.grandeView);
         eliminar=(ImageButton) findViewById(R.id.eliminarButton);
-        eliminar.setVisibility(View.INVISIBLE);
+       // eliminar.setVisibility(View.INVISIBLE);
         extraView = (TextView) findViewById(R.id.extraView);
         extra2View = (TextView) findViewById(R.id.extra2View);
         extra3View = (TextView) findViewById(R.id.extra3View);
         TextView extra0View = (TextView) findViewById(R.id.extra0View);
-        eliminar.setVisibility(View.INVISIBLE);
+        //eliminar.setVisibility(View.INVISIBLE);
         recibirDatos();
         cargarTotal();
         spinner = findViewById(R.id.ingredienteSpiner);
@@ -161,7 +159,7 @@ public class PdetallesActivity extends AppCompatActivity implements AdapterView.
 
     }
     public void eliminar(View t) {
-        Toast.makeText(this, "buton", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "buton", Toast.LENGTH_LONG).show();
         if (!extra3View.getText().toString().isEmpty())
         {
             restaingredientes();
@@ -197,7 +195,7 @@ public class PdetallesActivity extends AppCompatActivity implements AdapterView.
 
     }
     public void menu(View t) {
-        Intent intent = new Intent(PdetallesActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent(PdetallesActivity.this, RegistroUsuarios2Activity.class);
 
         String name = names.getText().toString();
         String tamano = size.getText().toString();
@@ -207,7 +205,7 @@ public class PdetallesActivity extends AppCompatActivity implements AdapterView.
         String extra3 = extra3View.getText().toString();
         String comentario =comentarios.getText().toString();
         String totales = total.getText().toString();
-        Toast.makeText(this, totales, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, totales, Toast.LENGTH_LONG).show();
 
         intent.putExtra("name", name);
         intent.putExtra("tamano", tamano);

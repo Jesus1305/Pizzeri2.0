@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.edgarlopez.pizzerialosarcos.ui.MenuNavigationActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class EdetallesActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -358,7 +356,7 @@ public class EdetallesActivity extends AppCompatActivity implements AdapterView.
     }
     public void eagregar(View t) {
         Toast.makeText(this, "no jala", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(EdetallesActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent(EdetallesActivity.this, RegistroUsuarios2Activity.class);
 
 
         String name = enames.getText().toString();

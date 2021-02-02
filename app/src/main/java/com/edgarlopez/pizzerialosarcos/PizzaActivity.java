@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +7,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +62,7 @@ public class PizzaActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Toast.makeText(PizzaActivity.this,"clicked:  "+names.get(position),Toast.LENGTH_LONG).show();
+               // Toast.makeText(PizzaActivity.this,"clicked:  "+names.get(position),Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(PizzaActivity.this, PdetallesActivity.class);
                 tpizza.setText(names.get(position));
                 String name = tpizza.getText().toString();

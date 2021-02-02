@@ -192,10 +192,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/ingredienteSpiner"
-                    android:background="@color/colorPrimaryDark"
+                    android:background="@color/ic_launcher_background"
                     android:onClick="eliminar"
                     android:translationY="210dp"
-                    app:srcCompat="@android:drawable/btn_dialog" />
+                    android:visibility="invisible"
+                    app:srcCompat="@android:drawable/btn_dialog"
+                    tools:visibility="invisible" />
 
                 <TextView
                     android:id="@+id/nombrepizza"
@@ -207,21 +209,21 @@
 
                 <TextView
                     android:id="@+id/subtotalView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
                     android:text=""
                     android:translationY="380dp" />
 
                 <TextView
                     android:id="@+id/sizeView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
                     android:text="" />
 
                 <TextView
                     android:id="@+id/cantidadesView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
                     android:text="" />
 
             </RelativeLayout>
