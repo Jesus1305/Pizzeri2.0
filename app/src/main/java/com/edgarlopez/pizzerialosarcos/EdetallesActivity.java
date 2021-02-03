@@ -355,7 +355,7 @@ public class EdetallesActivity extends AppCompatActivity implements AdapterView.
 
     }
     public void eagregar(View t) {
-        Toast.makeText(this, "no jala", Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, "no jala", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(EdetallesActivity.this, RegistroUsuarios2Activity.class);
 
 
@@ -389,6 +389,7 @@ public class EdetallesActivity extends AppCompatActivity implements AdapterView.
         intent.putExtra("totales",totales);
 
         startActivity(intent);
+        finish();
 
 
     }

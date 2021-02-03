@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.edgarlopez.pizzerialosarcos.ui.MenuNavigationActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class NdetalleActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText ncomentarios;
@@ -119,7 +117,7 @@ public class NdetalleActivity extends AppCompatActivity implements AdapterView.O
         }
     }
     public void nagregar(View t) {
-        Intent intent = new Intent( NdetalleActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent( NdetalleActivity.this, RegistroUsuarios2Activity.class);
 
         String name = nnames.getText().toString();
         String tamano = nextraView.getText().toString();
@@ -141,6 +139,7 @@ public class NdetalleActivity extends AppCompatActivity implements AdapterView.O
         intent.putExtra("totales",totales);
 
         startActivity(intent);
+        finish();
     }
     private void nrecibirDatos() {
         Bundle extra = getIntent().getExtras();
@@ -149,7 +148,6 @@ public class NdetalleActivity extends AppCompatActivity implements AdapterView.O
         nnames = (TextView) findViewById(R.id.nnombre);
         nnames.setText(name);
     }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {

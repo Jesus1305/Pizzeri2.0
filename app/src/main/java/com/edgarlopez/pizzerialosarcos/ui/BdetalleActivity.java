@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +11,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.edgarlopez.pizzerialosarcos.R;
+import com.edgarlopez.pizzerialosarcos.RegistroUsuarios2Activity;
 
 public class BdetalleActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -225,7 +226,6 @@ public class BdetalleActivity extends AppCompatActivity implements AdapterView.O
         }
 
     }
-
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
@@ -302,7 +302,7 @@ public class BdetalleActivity extends AppCompatActivity implements AdapterView.O
 
     }
     public void bagregar(View t) {
-        Intent intent = new Intent(BdetalleActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent(BdetalleActivity.this, RegistroUsuarios2Activity.class);
 
         String name = bnames.getText().toString();
         String tamano = bextraView.getText().toString();
@@ -324,6 +324,7 @@ public class BdetalleActivity extends AppCompatActivity implements AdapterView.O
         intent.putExtra("totales",totales);
 
         startActivity(intent);
+        finish();
 
     }
 

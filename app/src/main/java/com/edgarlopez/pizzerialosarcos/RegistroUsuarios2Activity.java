@@ -32,6 +32,7 @@ public class RegistroUsuarios2Activity extends AppCompatActivity {
         recibirDatos();
         registrarUsuarios();
         carritoView();
+       finish();
     }
 
     private void recibirDatos() {

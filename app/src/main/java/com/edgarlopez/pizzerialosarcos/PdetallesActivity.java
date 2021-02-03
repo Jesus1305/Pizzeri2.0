@@ -200,7 +200,7 @@ public class PdetallesActivity extends AppCompatActivity implements AdapterView.
         String name = names.getText().toString();
         String tamano = size.getText().toString();
         String cantidad=cantidades.getText().toString();
-        String extra = extraView.getText().toString();
+        String extra = extraView.getText().toString()+extra2View.getText().toString()+extra3View.getText().toString();
         String extra2 = extra2View.getText().toString();
         String extra3 = extra3View.getText().toString();
         String comentario =comentarios.getText().toString();
@@ -217,6 +217,7 @@ public class PdetallesActivity extends AppCompatActivity implements AdapterView.
         intent.putExtra("totales",totales);
 
         startActivity(intent);
+        finish();
     }
 
     @Override

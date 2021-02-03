@@ -4,10 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+
 import com.edgarlopez.pizzerialosarcos.DesayunoActivity;
 import com.edgarlopez.pizzerialosarcos.EnsaladasActivity;
 import com.edgarlopez.pizzerialosarcos.HamburgesaActivity;
 import com.edgarlopez.pizzerialosarcos.KidsActivity;
+import com.edgarlopez.pizzerialosarcos.ListaPersonas2Recycler;
 import com.edgarlopez.pizzerialosarcos.MariscoActivity;
 import com.edgarlopez.pizzerialosarcos.NieveActivity;
 import com.edgarlopez.pizzerialosarcos.PizzaActivity;
@@ -15,12 +22,6 @@ import com.edgarlopez.pizzerialosarcos.PlatillosActivity;
 import com.edgarlopez.pizzerialosarcos.PostreActivity;
 import com.edgarlopez.pizzerialosarcos.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class MenuNavigationActivity extends AppCompatActivity {
 
@@ -81,4 +82,11 @@ public class MenuNavigationActivity extends AppCompatActivity {
         Intent intent = new Intent(MenuNavigationActivity.this, KidsActivity.class);
         startActivity(intent);
     }
+
+    public void carro(View t) {
+        Intent intent = new Intent(MenuNavigationActivity.this, ListaPersonas2Recycler.class);
+        startActivity(intent);
+    }
+
+
 }

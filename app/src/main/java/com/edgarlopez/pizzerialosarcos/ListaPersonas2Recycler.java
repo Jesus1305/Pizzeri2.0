@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -27,8 +26,9 @@ public class ListaPersonas2Recycler extends AppCompatActivity {
     ArrayList<Usuario> listaUsuario;
     RecyclerView recyclerViewUsuarios;
 
-    TextView id;
+    TextView id,totalaPagar;
   ConexionSQLiteHelper conn;
+    private int ftotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class ListaPersonas2Recycler extends AppCompatActivity {
        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_usuarios",null,1);
         id= (TextView) findViewById(R.id.IdEliminar);
         listaUsuario=new ArrayList<>();
-
+        totalaPagar=(TextView) findViewById(R.id.textTotalNum) ;
         recyclerViewUsuarios= (RecyclerView) findViewById(R.id.recyclerPersonas);
         recyclerViewUsuarios.setLayoutManager(new LinearLayoutManager(this));
 
@@ -49,8 +49,8 @@ public class ListaPersonas2Recycler extends AppCompatActivity {
         adapter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),
-                        "Seleccion: "+listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId(), Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(getApplicationContext(),
+               //         "Seleccion: "+listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId(), Toast.LENGTH_SHORT).show();
                 String idReal = listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId().toString();
                 id.setText(idReal);
                 // id.setText();
@@ -114,6 +114,10 @@ private void consultarListaPersonas() {
             usuario.setExtra(cursor.getString(5));
             usuario.setComentarios(cursor.getString(6));
             usuario.setTotal(cursor.getString(2));
+
+            int total = Integer.parseInt(cursor.getString(2));
+            ftotal = ftotal + total;
+            totalaPagar.setText(String.valueOf(ftotal));
 
             listaUsuario.add(usuario);
         }

@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +11,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.edgarlopez.pizzerialosarcos.ui.MenuNavigationActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PodetalleActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -174,8 +172,8 @@ public class PodetalleActivity extends AppCompatActivity implements AdapterView.
 
     }
     public void poagregar(View t) {
-        Toast.makeText(this, "no jala", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(PodetalleActivity.this, MenuNavigationActivity.class);
+       // Toast.makeText(this, "no jala", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(PodetalleActivity.this, RegistroUsuarios2Activity.class);
 
 
         String name = ponames.getText().toString();
@@ -198,6 +196,7 @@ public class PodetalleActivity extends AppCompatActivity implements AdapterView.
         intent.putExtra("totales",totales);
 
         startActivity(intent);
+        finish();
 
     }
 

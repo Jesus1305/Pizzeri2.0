@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.edgarlopez.pizzerialosarcos.ui.MenuNavigationActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class KdetalleActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText kcomentarios;
@@ -118,7 +116,7 @@ public class KdetalleActivity extends AppCompatActivity implements AdapterView.O
         }
     }
     public void kagregar(View t) {
-        Intent intent = new Intent( KdetalleActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent( KdetalleActivity.this, RegistroUsuarios2Activity.class);
 
         String name = knames.getText().toString();
         String tamano = "";
@@ -138,8 +136,8 @@ public class KdetalleActivity extends AppCompatActivity implements AdapterView.O
         intent.putExtra("extra3", extra3);
         intent.putExtra("comentario", comentario);
         intent.putExtra("totales",totales);
-
         startActivity(intent);
+        finish();
     }
     private void krecibirDatos() {
         Bundle extra = getIntent().getExtras();

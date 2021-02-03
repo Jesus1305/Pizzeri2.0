@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +12,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.edgarlopez.pizzerialosarcos.R;
+import com.edgarlopez.pizzerialosarcos.RegistroUsuarios2Activity;
 
 public class MdetallesActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText mcomentarios;
@@ -184,7 +185,6 @@ public class MdetallesActivity extends AppCompatActivity implements AdapterView.
 
         }
     }
-
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
@@ -427,7 +427,7 @@ public class MdetallesActivity extends AppCompatActivity implements AdapterView.
         }
     }
     public void magregar(View t) {
-        Intent intent = new Intent(MdetallesActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent(MdetallesActivity.this, RegistroUsuarios2Activity.class);
 
         String name = mnames.getText().toString();
         String tamano = "x";
@@ -449,6 +449,7 @@ public class MdetallesActivity extends AppCompatActivity implements AdapterView.
         intent.putExtra("totales",totales);
 
         startActivity(intent);
+        finish();
     }
 
 

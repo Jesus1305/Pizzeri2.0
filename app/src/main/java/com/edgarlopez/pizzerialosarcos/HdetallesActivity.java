@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.edgarlopez.pizzerialosarcos.ui.MenuNavigationActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HdetallesActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText hcomentarios;
@@ -347,7 +345,7 @@ public class HdetallesActivity extends AppCompatActivity implements AdapterView.
 
     }
     public void hagregar(View t) {
-        Intent intent = new Intent(HdetallesActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent(HdetallesActivity.this, RegistroUsuarios2Activity.class);
 
         String name = hnames.getText().toString();
         String tamano = "x";
@@ -357,7 +355,7 @@ public class HdetallesActivity extends AppCompatActivity implements AdapterView.
         String extra3 = hextra3View.getText().toString();
         String comentario =hcomentarios.getText().toString();
         String totales = htotal.getText().toString();
-        Toast.makeText(this, totales, Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, totales, Toast.LENGTH_LONG).show();
 
         intent.putExtra("name", name);
         intent.putExtra("tamano", tamano);
@@ -367,7 +365,7 @@ public class HdetallesActivity extends AppCompatActivity implements AdapterView.
         intent.putExtra("extra3", extra3);
         intent.putExtra("comentario", comentario);
         intent.putExtra("totales",totales);
-
+finish();
         startActivity(intent);
     }
 

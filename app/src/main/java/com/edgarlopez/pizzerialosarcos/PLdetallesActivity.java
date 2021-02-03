@@ -1,7 +1,5 @@
 package com.edgarlopez.pizzerialosarcos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.edgarlopez.pizzerialosarcos.ui.MenuNavigationActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PLdetallesActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText plcomentarios;
@@ -231,12 +229,10 @@ public class PLdetallesActivity extends AppCompatActivity implements AdapterView
 
         }
     }
-
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-
 
     private void plsumaingredientes() {
         int subtotal,valor,suma,h;
@@ -526,7 +522,7 @@ public class PLdetallesActivity extends AppCompatActivity implements AdapterView
 
     }
     public void plagregar(View t) {
-        Intent intent = new Intent(PLdetallesActivity.this, MenuNavigationActivity.class);
+        Intent intent = new Intent(PLdetallesActivity.this, RegistroUsuarios2Activity.class);
 
         String name = plnames.getText().toString();
         String tamano = "x";
@@ -548,6 +544,7 @@ public class PLdetallesActivity extends AppCompatActivity implements AdapterView
         intent.putExtra("totales",totales);
 
         startActivity(intent);
+        finish();
     }
 
 
